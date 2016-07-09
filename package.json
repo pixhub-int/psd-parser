@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/imgqb/psd-parser",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-browser": "browserify -x pngjs index.js > psd-parser.js",
+    "watch-browser": "watchify -x pngjs index.js -o psd-parser.js"
   }
 }
